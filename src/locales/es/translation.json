@@ -1,0 +1,114 @@
+{
+  "welcome": "¡Hola! Soy Zwicky, el asistente virtual de Asteroid Technologies. ¿En qué puedo ayudarte hoy?",
+  "products": {
+    "title": "Genial, contamos con los siguientes productos:",
+    "hablalo": "Háblalo",
+    "mapa": "Mapa Inclusivo",
+    "hablalo_desc": "Háblalo: App gratuita diseñada para asistir a personas con discapacidad comunicacional. Ofrece herramientas adaptables para que la persona pueda comunicarse y participar de forma activa en los distintos contextos de la vida cotidiana. Su funcionamiento no requiere conexión a internet y está disponible para Android e iOS.",
+    "mapa_desc": "Herramienta que muestra espacios y comercios accesibles."
+  },
+  "faq": {
+    "title": "Decime, ¿Qué querés saber?",
+    "hablalo": {
+      "title": "Te facilitamos las siguientes preguntas frecuentes.",
+      "download": "Para descargarla, accede a la tienda de aplicaciones de tu dispositivo (App Store o Play Store), buscá Háblalo y presioná el botón de descarga. Una vez instalada, estará lista para usarse.",
+      "functionality": "Háblalo incluye distintas funciones adaptadas a diferentes necesidades comunicativas: CHAT: Convierte lo que decís en texto y lo que escribís en voz. CARDS: Facilita la comunicación mediante imágenes sencillas. ATAJOS: Permite usar frases cortas preconfiguradas. FRASES: Combina cards o atajos para crear oraciones completas.",
+      "cards": "Se recomienda usar 'Cards' para facilitar la interacción mediante imágenes. Es ideal para personas con desafíos cognitivos, que no saben leer o escribir, o con movilidad reducida.",
+      "shortcuts": "La función de Atajos permite una comunicación más rápida con frases preestablecidas. Es útil para personas que pueden leer pero requieren apoyo para expresarse con facilidad. También agiliza la interacción en personas con movilidad reducida.",
+      "chat": "El módulo Chat convierte texto en voz y voz en texto. Es ideal para personas con habilidades motoras finas que pueden escribir. También incluye traducción automática, y beneficia a quienes tienen disfonía, habla ininteligible, pérdida de la voz o sordera."
+    },
+    "asteroid": {
+      "title": "Te facilitamos las siguientes preguntas frecuentes.",
+      "what_is": "Empresa social que crea tecnología para personas con discapacidad comunicacional. Creadora de Háblalo.",
+      "where": "Tenemos impacto en más de 75 países, con presencia en Europa y América Latina.",
+      "free": "Háblalo es gratuita para usuarios. Los servicios a organizaciones (como Business o Events) son pagos.",
+      "consultancy": "Evaluamos procesos, señalética, espacios digitales y contenido con perspectiva de accesibilidad.",
+      "demo": "Sí. Desde la sección 'Solicitar asesoramiento' podés dejar tus datos.",
+      "companies": "Iberia, Sanitas, Santander, Farmacity y más ya confían en nuestros servicios."
+    }
+  },
+  "contact": {
+    "title": "Contacto"
+  },
+  "support": {
+    "title": "¿Tuviste un problema técnico o necesitás más ayuda con la app?",
+    "name_request": "¿Tuviste un problema técnico o necesitás más ayuda con la app? Facilitanos tu infomación para que nuestro equipo se ponga en contacto a la brevedad por correo electrónico.\nFacilitanos tu Nombre completo por medio del chat",
+    "email_request": "Facilitanos tu email para poder responder tu consulta.",
+    "problem_request": "¿Qué problema técnico estás experimentando?",
+    "confirmation": "Gracias por tu consulta, nuestro equipo estará contestando tu inquietud por email."
+  },
+  "advice": {
+    "title": "Asesoramiento",
+    "name_request": "Para que podamos ayudarte mejor, necesitamos que nos facilites la siguiente información, vamos poco a poco.\nFacilitanos tu Nombre completo por medio del chat",
+    "email_request": "Facilitanos tu email para poder responder tu consulta.",
+    "details_request": "¿Qué consulta o inquietud tenés?",
+    "confirmation": "Gracias por tu consulta, nuestro equipo estará contestando tu inquietud por email."
+  },
+  "services": {
+    "title": "Te presentamos nuestros servicios:",
+    "business": "Háblalo for Business",
+    "education": "Háblalo for Education",
+    "events": "Háblalo for Events",
+    "consultancy": "Consultorías en accesibilidad",
+    "trainings": "Capacitaciones inclusivas",
+    "web": "Accesibilidad web",
+    "business_desc": "Háblalo for Business: Solución inclusiva para empresas e instituciones. Mediante tan solo el uso de códigos QR tu espacio se torna comunicacionalmente accesible.",
+    "education_desc": "Háblalo for Education: Facilita la participación de estudiantes con discapacidad comunicacional. Se adapta a entornos escolares y universitarios.",
+    "events_desc": "Háblalo for Events: Integra accesibilidad en eventos presenciales o virtuales mediante",
+    "consultancy_desc": "Háblalo for Events: Integra accesibilidad en eventos presenciales o virtuales mediante",
+    "web_desc": "Accesibilidad Web: Auditoría de sitios según WCAG. Incluye diagnóstico, informe y recomendaciones."
+  },
+  "training": {
+    "title": "Capacitaciones inclusivas: Formación para equipos de atención, RRHH y docentes. Modalidad presencial o virtual.",
+    "basic": "Capacitación básica",
+    "advanced": "Capacitación avanzada",
+    "leaders": "Capacitación para líderes"
+  },
+  "basic_training": {
+    "content": "Nuestra capacitación básica incluye:\n\n- Introducción a la inclusión y accesibilidad\n- Comprensión de diferentes discapacidades\n- Herramientas básicas de comunicación inclusiva\n- Prácticas recomendadas para interactuar con personas con discapacidad",
+    "modalities": "Modalidades de cursado"
+  },
+  "advanced_training": {
+    "content": "Nuestra capacitación avanzada incluye:\n\n- Estudio profundo de estándares de accesibilidad\n- Implementación técnica de soluciones de accesibilidad\n- Pruebas de usuario con personas con discapacidad\n- Creación de políticas de accesibilidad para organizaciones"
+  },
+  "leader_training": {
+    "content": "Nuestra capacitación para líderes incluye:\n\n- Desarrollo de estrategias de inclusión para ejecutivos\n- Construcción de una cultura organizacional inclusiva\n- Medición y reporte de iniciativas de accesibilidad\n- Cumplimiento legal y gestión de riesgos"
+  },
+  "modalities": {
+    "content": "Ofrecemos diferentes modalidades para nuestras capacitaciones básicas:\n\n- Presencial: En vuestras instalaciones\n- Virtual en vivo: Por videoconferencia\n- E-learning: A través de nuestra plataforma\n- Híbrido: Combinando sesiones presenciales y virtuales"
+  },
+  "navigation": {
+    "back_to": "Volver a {{location}}",
+    "back_to_menu": "Volver al menú inicial",
+    "back_to_product": "Volver a Producto",
+    "back_to_services": "Volver a Servicios",
+    "back": "Atrás",
+    "products": "Conocer productos",
+    "services": "Conocer servicios",
+    "advice": "Solicitar asesoramiento",
+    "faq": "Preguntas frecuentes",
+    "support": "Soporte técnico"
+  },
+  "actions": {
+    "send": "Enviar",
+    "type_message": "Escribe un mensaje...",
+    "close": "Cerrar"
+  },
+  "feedback": {
+    "like": "Me gusta",
+    "dislike": "No me gusta",
+    "question": "¿Te resultó útil esta respuesta?"
+  },
+  "language": {
+    "change": "Cambiar idioma",
+    "es": "Español",
+    "en": "Inglés",
+    "fr": "Francés"
+  },
+  "chat": {
+    "assistant": "Asistente virtual",
+    "typing": "Escribiendo...",
+    "fallback": "Lo siento, no he entendido tu consulta. ¿Podrías reformularla o seleccionar una de las opciones disponibles?",
+    "error": "Lo siento, ha ocurrido un error al procesar tu solicitud. Por favor, inténtalo de nuevo."
+  }
+}

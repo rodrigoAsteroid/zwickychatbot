@@ -1,0 +1,700 @@
+{
+  "chatTree": {
+    "name": "Zwicky Chatbot",
+    "description": "Chatbot asistente virtual para Asteroid Technologies",
+    "structure": {
+      "id": "chat-tree",
+      "nodes": {
+        "welcome": {
+          "id": "welcome",
+          "message": "¡Hola! Soy Zwicky, tu asistente virtual de Asteroid Technologies. ¿En qué puedo ayudarte hoy?",
+          "options": [
+            {
+              "label": "Conocer productos",
+              "value": "conocer_productos",
+              "nextNodeId": "productos"
+            },
+            {
+              "label": "Conocer servicios",
+              "value": "conocer_servicios",
+              "nextNodeId": "servicios"
+            },
+            {
+              "label": "Solicitar asesoramiento",
+              "value": "solicitar_asesoramiento",
+              "nextNodeId": "asesoramiento"
+            },
+            {
+              "label": "Preguntas frecuentes",
+              "value": "preguntas_frecuentes",
+              "nextNodeId": "preguntas_frecuentes"
+            },
+            {
+              "label": "Soporte técnico",
+              "value": "soporte_tecnico",
+              "nextNodeId": "soporte"
+            }
+          ],
+          "level": 0
+        },
+        "productos": {
+          "id": "productos",
+          "message": "Estos son nuestros productos para mejorar la comunicación y accesibilidad:",
+          "options": [
+            {
+              "label": "Hablalo",
+              "value": "producto_hablalo",
+              "nextNodeId": "producto_hablalo"
+            },
+            {
+              "label": "Mapa Inclusivo",
+              "value": "producto_mapa",
+              "nextNodeId": "producto_mapa"
+            }
+          ],
+          "parentId": "welcome",
+          "level": 1
+        },
+        "servicios": {
+          "id": "servicios",
+          "message": "Ofrecemos estos servicios de accesibilidad y comunicación:",
+          "options": [
+            {
+              "label": "Business",
+              "value": "servicio_business",
+              "nextNodeId": "servicio_business"
+            },
+            {
+              "label": "Education",
+              "value": "servicio_education",
+              "nextNodeId": "servicio_education"
+            },
+            {
+              "label": "Events",
+              "value": "servicio_events",
+              "nextNodeId": "servicio_events"
+            },
+            {
+              "label": "Consultorías",
+              "value": "servicio_consultorias",
+              "nextNodeId": "servicio_consultorias"
+            },
+            {
+              "label": "Capacitaciones",
+              "value": "servicio_capacitaciones",
+              "nextNodeId": "servicio_capacitaciones"
+            },
+            {
+              "label": "Web",
+              "value": "servicio_web",
+              "nextNodeId": "servicio_web"
+            }
+          ],
+          "parentId": "welcome",
+          "level": 1
+        },
+        "asesoramiento": {
+          "id": "asesoramiento",
+          "message": "Para brindarte asesoramiento personalizado, por favor ingresa tu nombre completo:",
+          "parentId": "welcome",
+          "level": 1
+        },
+        "asesoramiento_email": {
+          "id": "asesoramiento_email",
+          "message": "Gracias. Ahora por favor ingresa tu correo electrónico para poder contactarte:",
+          "parentId": "asesoramiento",
+          "level": 2
+        },
+        "asesoramiento_consulta": {
+          "id": "asesoramiento_consulta",
+          "message": "Excelente. Por favor, describe brevemente tu consulta o en qué podemos ayudarte:",
+          "parentId": "asesoramiento_email",
+          "level": 3
+        },
+        "asesoramiento_confirmacion": {
+          "id": "asesoramiento_confirmacion",
+          "message": "¡Perfecto! Hemos recibido tu solicitud de asesoramiento. Un miembro de nuestro equipo se pondrá en contacto contigo a la brevedad. ¿Hay algo más en lo que pueda ayudarte?",
+          "options": [
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "asesoramiento_consulta",
+          "level": 4
+        },
+        "preguntas_frecuentes": {
+          "id": "preguntas_frecuentes",
+          "message": "¿Sobre qué tema te gustaría conocer más?",
+          "options": [
+            {
+              "label": "Sobre Hablalo",
+              "value": "sobre_hablalo",
+              "nextNodeId": "sobre_hablalo"
+            },
+            {
+              "label": "Sobre Asteroid y sus servicios",
+              "value": "sobre_asteroid_servicios",
+              "nextNodeId": "sobre_asteroid_servicios"
+            }
+          ],
+          "parentId": "welcome",
+          "level": 1
+        },
+        "sobre_hablalo": {
+          "id": "sobre_hablalo",
+          "message": "Preguntas frecuentes sobre Hablalo:",
+          "options": [
+            {
+              "label": "¿Cómo puedo descargar la app?",
+              "value": "sobre_hablalo_descarga",
+              "nextNodeId": "sobre_hablalo_descarga"
+            },
+            {
+              "label": "¿Cómo funciona?",
+              "value": "sobre_hablalo_funcionamiento",
+              "nextNodeId": "sobre_hablalo_funcionamiento"
+            },
+            {
+              "label": "¿Qué son las tarjetas?",
+              "value": "sobre_hablalo_cards",
+              "nextNodeId": "sobre_hablalo_cards"
+            },
+            {
+              "label": "¿Qué son los atajos?",
+              "value": "sobre_hablalo_atajos",
+              "nextNodeId": "sobre_hablalo_atajos"
+            },
+            {
+              "label": "¿Qué es Hablalo Chat?",
+              "value": "sobre_hablalo_chat",
+              "nextNodeId": "sobre_hablalo_chat"
+            }
+          ],
+          "parentId": "preguntas_frecuentes",
+          "level": 2
+        },
+        "sobre_asteroid_servicios": {
+          "id": "sobre_asteroid_servicios",
+          "message": "Preguntas frecuentes sobre Asteroid Technologies:",
+          "options": [
+            {
+              "label": "¿Qué es Asteroid Technologies?",
+              "value": "sobre_asteroid_servicios_que_es",
+              "nextNodeId": "sobre_asteroid_servicios_que_es"
+            },
+            {
+              "label": "¿Dónde operan?",
+              "value": "sobre_asteroid_servicios_donde_operan",
+              "nextNodeId": "sobre_asteroid_servicios_donde_operan"
+            },
+            {
+              "label": "¿Sus servicios son gratuitos?",
+              "value": "sobre_asteroid_servicios_son_gratuitos",
+              "nextNodeId": "sobre_asteroid_servicios_son_gratuitos"
+            },
+            {
+              "label": "¿Cómo solicitar una consultoría?",
+              "value": "sobre_asteroid_servicios_consultorias",
+              "nextNodeId": "sobre_asteroid_servicios_consultorias"
+            },
+            {
+              "label": "¿Cómo ver una demo de Hablalo?",
+              "value": "sobre_asteroid_servicios_hablalo_demo",
+              "nextNodeId": "sobre_asteroid_servicios_hablalo_demo"
+            },
+            {
+              "label": "¿Trabajan con empresas?",
+              "value": "sobre_asteroid_servicios_empresas",
+              "nextNodeId": "sobre_asteroid_servicios_empresas"
+            }
+          ],
+          "parentId": "preguntas_frecuentes",
+          "level": 2
+        },
+        "sobre_hablalo_descarga": {
+          "id": "sobre_hablalo_descarga",
+          "message": "Puedes descargar Hablalo gratuitamente desde la App Store (iOS) o Google Play Store (Android). Simplemente busca 'Hablalo' en las tiendas o visita nuestro sitio web para los enlaces directos.",
+          "options": [
+            {
+              "label": "Volver a Preguntas sobre Hablalo",
+              "value": "_navigate_to_node:sobre_hablalo",
+              "nextNodeId": "sobre_hablalo"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "sobre_hablalo",
+          "level": 3
+        },
+        "sobre_hablalo_funcionamiento": {
+          "id": "sobre_hablalo_funcionamiento",
+          "message": "Hablalo es una app de comunicación aumentativa que ayuda a personas con dificultades de comunicación. Permite crear mensajes mediante pictogramas, texto o voz, facilita la comprensión con traducción instantánea entre más de 70 idiomas, y ofrece herramientas como tarjetas personalizables y atajos para necesidades cotidianas.",
+          "options": [
+            {
+              "label": "Volver a Preguntas sobre Hablalo",
+              "value": "_navigate_to_node:sobre_hablalo",
+              "nextNodeId": "sobre_hablalo"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "sobre_hablalo",
+          "level": 3
+        },
+        "sobre_hablalo_cards": {
+          "id": "sobre_hablalo_cards",
+          "message": "Las tarjetas en Hablalo son pictogramas personalizables que representan palabras o frases. Puedes organizarlas en categorías para facilitar la comunicación. Al tocar una tarjeta, la app pronuncia el mensaje asociado y lo muestra en texto, facilitando la comunicación con personas que no hablan tu idioma o tienen dificultades auditivas.",
+          "options": [
+            {
+              "label": "Volver a Preguntas sobre Hablalo",
+              "value": "_navigate_to_node:sobre_hablalo",
+              "nextNodeId": "sobre_hablalo"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "sobre_hablalo",
+          "level": 3
+        },
+        "sobre_hablalo_atajos": {
+          "id": "sobre_hablalo_atajos",
+          "message": "Los atajos son accesos directos a frases o solicitudes frecuentes que puedes personalizar para situaciones cotidianas. Por ejemplo, puedes crear atajos para pedir agua, solicitar ayuda o expresar necesidades básicas. Aparecen en la pantalla principal para un acceso rápido.",
+          "options": [
+            {
+              "label": "Volver a Preguntas sobre Hablalo",
+              "value": "_navigate_to_node:sobre_hablalo",
+              "nextNodeId": "sobre_hablalo"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "sobre_hablalo",
+          "level": 3
+        },
+        "sobre_hablalo_chat": {
+          "id": "sobre_hablalo_chat",
+          "message": "Hablalo Chat es una función que permite a los usuarios mantener conversaciones en tiempo real con traducción automática. Cada mensaje se traduce instantáneamente al idioma seleccionado por el receptor, permitiendo comunicación fluida entre personas que hablan diferentes idiomas.",
+          "options": [
+            {
+              "label": "Volver a Preguntas sobre Hablalo",
+              "value": "_navigate_to_node:sobre_hablalo",
+              "nextNodeId": "sobre_hablalo"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "sobre_hablalo",
+          "level": 3
+        },
+        "sobre_asteroid_servicios_que_es": {
+          "id": "sobre_asteroid_servicios_que_es",
+          "message": "Asteroid Technologies es una empresa tecnológica enfocada en desarrollar soluciones de accesibilidad y comunicación inclusiva. Nuestra misión es romper barreras de comunicación mediante herramientas tecnológicas innovadoras como Hablalo y Mapa Inclusivo, además de ofrecer servicios de consultoría y capacitación en inclusión.",
+          "options": [
+            {
+              "label": "Volver a Preguntas sobre Asteroid",
+              "value": "_navigate_to_node:sobre_asteroid_servicios",
+              "nextNodeId": "sobre_asteroid_servicios"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "sobre_asteroid_servicios",
+          "level": 3
+        },
+        "sobre_asteroid_servicios_donde_operan": {
+          "id": "sobre_asteroid_servicios_donde_operan",
+          "message": "Asteroid Technologies opera principalmente en Argentina, pero nuestras soluciones están disponibles internacionalmente. Hablalo se utiliza en más de 110 países y estamos en constante expansión. Ofrecemos servicios remotos para clientes de todo el mundo y también presenciales en determinadas regiones.",
+          "options": [
+            {
+              "label": "Volver a Preguntas sobre Asteroid",
+              "value": "_navigate_to_node:sobre_asteroid_servicios",
+              "nextNodeId": "sobre_asteroid_servicios"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "sobre_asteroid_servicios",
+          "level": 3
+        },
+        "sobre_asteroid_servicios_son_gratuitos": {
+          "id": "sobre_asteroid_servicios_son_gratuitos",
+          "message": "Ofrecemos un modelo mixto. La aplicación Hablalo es completamente gratuita para usuarios individuales. Nuestros servicios empresariales, consultorías, capacitaciones y desarrollos a medida tienen costos variables según el alcance y las necesidades específicas. También ofrecemos planes especiales para organizaciones educativas y sin fines de lucro.",
+          "options": [
+            {
+              "label": "Volver a Preguntas sobre Asteroid",
+              "value": "_navigate_to_node:sobre_asteroid_servicios",
+              "nextNodeId": "sobre_asteroid_servicios"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "sobre_asteroid_servicios",
+          "level": 3
+        },
+        "sobre_asteroid_servicios_consultorias": {
+          "id": "sobre_asteroid_servicios_consultorias",
+          "message": "Para solicitar una consultoría, puedes completar el formulario en nuestra web, enviarnos un email a info@asteroidtech.com o utilizar la opción 'Solicitar asesoramiento' en este mismo chat. Un representante te contactará para evaluar tus necesidades y ofrecerte las mejores soluciones para tu organización.",
+          "options": [
+            {
+              "label": "Volver a Preguntas sobre Asteroid",
+              "value": "_navigate_to_node:sobre_asteroid_servicios",
+              "nextNodeId": "sobre_asteroid_servicios"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "sobre_asteroid_servicios",
+          "level": 3
+        },
+        "sobre_asteroid_servicios_hablalo_demo": {
+          "id": "sobre_asteroid_servicios_hablalo_demo",
+          "message": "Puedes solicitar una demo de Hablalo para tu organización a través de nuestro sitio web o contactándonos directamente por email. También puedes descargar la app gratuitamente desde las tiendas para probarla. Para demos específicas para empresas o instituciones, te recomendamos agendar una llamada con nuestro equipo comercial.",
+          "options": [
+            {
+              "label": "Volver a Preguntas sobre Asteroid",
+              "value": "_navigate_to_node:sobre_asteroid_servicios",
+              "nextNodeId": "sobre_asteroid_servicios"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "sobre_asteroid_servicios",
+          "level": 3
+        },
+        "sobre_asteroid_servicios_empresas": {
+          "id": "sobre_asteroid_servicios_empresas",
+          "message": "Sí, ofrecemos soluciones específicas para empresas a través de nuestro servicio Asteroid Business. Trabajamos con organizaciones de todos los tamaños para mejorar su accesibilidad interna y externa, capacitar a su personal en comunicación inclusiva e implementar herramientas tecnológicas adaptadas a sus necesidades específicas.",
+          "options": [
+            {
+              "label": "Volver a Preguntas sobre Asteroid",
+              "value": "_navigate_to_node:sobre_asteroid_servicios",
+              "nextNodeId": "sobre_asteroid_servicios"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "sobre_asteroid_servicios",
+          "level": 3
+        },
+        "soporte": {
+          "id": "soporte",
+          "message": "Para brindarte soporte técnico, necesitamos algunos datos. Por favor, ingresa tu nombre completo:",
+          "parentId": "welcome",
+          "level": 1
+        },
+        "soporte_email": {
+          "id": "soporte_email",
+          "message": "Gracias. Ahora por favor ingresa tu correo electrónico para poder contactarte:",
+          "parentId": "soporte",
+          "level": 2
+        },
+        "soporte_problema": {
+          "id": "soporte_problema",
+          "message": "Por favor, describe detalladamente el problema que estás experimentando:",
+          "parentId": "soporte_email",
+          "level": 3
+        },
+        "soporte_confirmacion": {
+          "id": "soporte_confirmacion",
+          "message": "Hemos registrado tu solicitud de soporte. Nuestro equipo técnico revisará tu caso y te contactará a la brevedad. ¿Hay algo más en lo que pueda ayudarte?",
+          "options": [
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "soporte_problema",
+          "level": 4
+        },
+        "producto_hablalo": {
+          "id": "producto_hablalo",
+          "message": "Hablalo:\n\nAplicación de comunicación aumentativa y alternativa que ayuda a personas con dificultades de comunicación a expresarse y entender a otros mediante pictogramas, traducción instantánea entre más de 70 idiomas, y síntesis de voz. Ideal para personas con autismo, afasia, discapacidad auditiva, o para comunicarse en idiomas desconocidos.",
+          "options": [
+            {
+              "label": "Volver a Productos",
+              "value": "_navigate_to_node:productos",
+              "nextNodeId": "productos"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "productos",
+          "level": 2
+        },
+        "producto_mapa": {
+          "id": "producto_mapa",
+          "message": "Mapa Inclusivo:\n\nPlataforma colaborativa que mapea y califica lugares según su nivel de accesibilidad física, comunicacional y sensorial. Permite a personas con discapacidad planificar sus salidas conociendo de antemano las condiciones de accesibilidad de los lugares. Los usuarios pueden reportar la accesibilidad de nuevos sitios y los establecimientos pueden solicitar ser evaluados profesionalmente.",
+          "options": [
+            {
+              "label": "Volver a Productos",
+              "value": "_navigate_to_node:productos",
+              "nextNodeId": "productos"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "productos",
+          "level": 2
+        },
+        "servicio_business": {
+          "id": "servicio_business",
+          "message": "Asteroid Business:\n\nServicio dirigido a empresas que desean mejorar la accesibilidad y la comunicación inclusiva en su organización. Incluye capacitaciones para el personal, implementación de tecnologías de asistencia, consultoría para políticas inclusivas, y desarrollo de soluciones personalizadas según las necesidades específicas de la empresa.",
+          "options": [
+            {
+              "label": "Volver a Servicios",
+              "value": "_navigate_to_node:servicios",
+              "nextNodeId": "servicios"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "servicios",
+          "level": 2
+        },
+        "servicio_education": {
+          "id": "servicio_education",
+          "message": "Asteroid Education:\n\nServicio para instituciones educativas que buscan implementar herramientas de comunicación inclusiva. Ofrecemos capacitaciones para docentes, implementación de Hablalo en entornos educativos, adaptación de materiales didácticos para diferentes necesidades, y asesoramiento en la creación de espacios de aprendizaje verdaderamente inclusivos.",
+          "options": [
+            {
+              "label": "Volver a Servicios",
+              "value": "_navigate_to_node:servicios",
+              "nextNodeId": "servicios"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "servicios",
+          "level": 2
+        },
+        "servicio_events": {
+          "id": "servicio_events",
+          "message": "Asteroid Events:\n\nServicio de accesibilidad para eventos, conferencias y congresos. Proporcionamos intérpretes de lengua de señas, subtitulado en tiempo real, descripción de audio, y otras herramientas para garantizar que todos los asistentes puedan participar plenamente, independientemente de sus capacidades comunicativas.",
+          "options": [
+            {
+              "label": "Volver a Servicios",
+              "value": "_navigate_to_node:servicios",
+              "nextNodeId": "servicios"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "servicios",
+          "level": 2
+        },
+        "servicio_consultorias": {
+          "id": "servicio_consultorias",
+          "message": "Consultorías en Accesibilidad:\n\nOfrecemos evaluaciones exhaustivas de accesibilidad física, digital y comunicacional para organizaciones. Nuestros expertos analizan las instalaciones, sitios web, aplicaciones y procesos de comunicación, identificando barreras y proporcionando recomendaciones prácticas para mejorar la accesibilidad general.",
+          "options": [
+            {
+              "label": "Volver a Servicios",
+              "value": "_navigate_to_node:servicios",
+              "nextNodeId": "servicios"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "servicios",
+          "level": 2
+        },
+        "servicio_capacitaciones": {
+          "id": "servicio_capacitaciones",
+          "message": "Capacitaciones en Comunicación Inclusiva:\n\nProgramas de formación adaptados a diferentes contextos: empresarial, educativo, salud, atención al público, etc. Ofrecemos distintos niveles y modalidades para aprender sobre comunicación inclusiva, uso de tecnologías de asistencia y mejores prácticas de accesibilidad.",
+          "options": [
+            {
+              "label": "Capacitación básica",
+              "value": "capacitacion_basica",
+              "nextNodeId": "capacitacion_basica"
+            },
+            {
+              "label": "Capacitación avanzada",
+              "value": "capacitacion_avanzada",
+              "nextNodeId": "capacitacion_avanzada"
+            },
+            {
+              "label": "Capacitación para líderes",
+              "value": "capacitacion_lideres",
+              "nextNodeId": "capacitacion_lideres"
+            },
+            {
+              "label": "Modalidades de cursado",
+              "value": "modalidades",
+              "nextNodeId": "modalidades"
+            },
+            {
+              "label": "Volver a Servicios",
+              "value": "_navigate_to_node:servicios",
+              "nextNodeId": "servicios"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "servicios",
+          "level": 2
+        },
+        "capacitacion_basica": {
+          "id": "capacitacion_basica",
+          "message": "Capacitación Básica en Comunicación Inclusiva:\n\nTaller introductorio de 4 horas donde se abordan conceptos fundamentales de inclusión, accesibilidad y comunicación. Los participantes aprenden sobre diferentes barreras de comunicación, terminología apropiada, y herramientas básicas para facilitar la comunicación inclusiva en sus entornos. Incluye práctica con Hablalo y otras herramientas de apoyo.",
+          "options": [
+            {
+              "label": "Modalidades de cursado",
+              "value": "modalidades_cursado",
+              "nextNodeId": "modalidades"
+            },
+            {
+              "label": "Volver a Capacitaciones",
+              "value": "_navigate_to_node:servicio_capacitaciones",
+              "nextNodeId": "servicio_capacitaciones"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "servicio_capacitaciones",
+          "level": 3
+        },
+        "capacitacion_avanzada": {
+          "id": "capacitacion_avanzada",
+          "message": "Capacitación Avanzada en Comunicación Inclusiva:\n\nPrograma completo de 12 horas distribuidas en 3 sesiones donde se profundiza en estrategias específicas para diferentes contextos y discapacidades. Incluye módulos sobre comunicación con personas sordas, personas con trastornos del espectro autista, personas con afasia, y comunicación intercultural. Los participantes desarrollan competencias avanzadas en el uso de tecnologías de asistencia.",
+          "options": [
+            {
+              "label": "Modalidades de cursado",
+              "value": "modalidades_cursado",
+              "nextNodeId": "modalidades"
+            },
+            {
+              "label": "Volver a Capacitaciones",
+              "value": "_navigate_to_node:servicio_capacitaciones",
+              "nextNodeId": "servicio_capacitaciones"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "servicio_capacitaciones",
+          "level": 3
+        },
+        "capacitacion_lideres": {
+          "id": "capacitacion_lideres",
+          "message": "Capacitación para Líderes en Inclusión:\n\nPrograma especializado de 16 horas para responsables de equipos, departamentos de RRHH y directivos. Se enfoca en la implementación de políticas y prácticas organizacionales inclusivas, gestión de equipos diversos, adaptación de procesos para eliminar barreras, y medición del impacto de las iniciativas de inclusión. Incluye mentoría personalizada posterior al curso.",
+          "options": [
+            {
+              "label": "Modalidades de cursado",
+              "value": "modalidades_cursado",
+              "nextNodeId": "modalidades"
+            },
+            {
+              "label": "Volver a Capacitaciones",
+              "value": "_navigate_to_node:servicio_capacitaciones",
+              "nextNodeId": "servicio_capacitaciones"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "servicio_capacitaciones",
+          "level": 3
+        },
+        "modalidades": {
+          "id": "modalidades",
+          "message": "Modalidades de Cursado:\n\n- Presencial: En las instalaciones del cliente o en nuestras sedes.\n- Virtual sincrónico: Sesiones en vivo a través de plataformas como Zoom o Teams.\n- Virtual asincrónico: Contenido grabado con actividades prácticas y tutorías programadas.\n- Formato mixto: Combinación de sesiones presenciales y virtuales.\n\nTodas las modalidades incluyen materiales accesibles, certificación y seguimiento posterior.",
+          "options": [
+            {
+              "label": "Volver a Capacitaciones",
+              "value": "_navigate_to_node:servicio_capacitaciones",
+              "nextNodeId": "servicio_capacitaciones"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "servicio_capacitaciones",
+          "level": 3
+        },
+        "servicio_web": {
+          "id": "servicio_web",
+          "message": "Desarrollo Web Accesible:\n\nServicio especializado en la creación y adaptación de sitios web y aplicaciones para cumplir con estándares internacionales de accesibilidad digital (WCAG). Incluye auditorías de accesibilidad de plataformas existentes, implementación de mejoras, y capacitación para equipos de desarrollo en prácticas de codificación accesible.",
+          "options": [
+            {
+              "label": "Volver a Servicios",
+              "value": "_navigate_to_node:servicios",
+              "nextNodeId": "servicios"
+            },
+            {
+              "label": "Volver al menú inicial",
+              "value": "volver_menu",
+              "nextNodeId": "welcome"
+            }
+          ],
+          "parentId": "servicios",
+          "level": 2
+        }
+      }
+    }
+  },
+  "feedbacks": []
+}
