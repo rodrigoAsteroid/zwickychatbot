@@ -6,18 +6,34 @@ import { ChatTree, ChatNode, Feedback } from "@/shared/types";
 // Obtenemos la ruta base de la aplicación
 
 // Path to JSON data file
-const DATA_FILE_PATH = path.join(
-  process.cwd(),
-  "src",
-  "data",
-  "chatData.json"
-);
+const DATA_FILE_PATH = path.join(process.cwd(), "src", "data", "chatData.json");
 
 // Paths to translation files
 const TRANSLATION_PATH: Record<string, string> = {
-  es: path.join(process.cwd(), "src", "locales", "es", "translation.json"),
-  en: path.join(process.cwd(), "src", "locales", "en", "translation.json"),
-  fr: path.join(process.cwd(), "src", "locales", "fr", "translation.json"),
+  es: path.join(
+    process.cwd(),
+    "src",
+    "i18n",
+    "locales",
+    "es",
+    "translation.json"
+  ),
+  en: path.join(
+    process.cwd(),
+    "src",
+    "i18n",
+    "locales",
+    "en",
+    "translation.json"
+  ),
+  fr: path.join(
+    process.cwd(),
+    "src",
+    "i18n",
+    "locales",
+    "fr",
+    "translation.json"
+  ),
 };
 
 // Interface for our JSON data structure

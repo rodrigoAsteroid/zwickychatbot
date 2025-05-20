@@ -155,11 +155,20 @@ export function useChat(): ChatHook {
     setIsTyping(true);
 
     try {
+      if (!nodeId) {
+        throw new Error("Node ID is required");
+      }
+
+      // Handle navigation format
+      if (nodeId.startsWith("_navigate_to_node:")) {
+        nodeId = nodeId.replace("_navigate_to_node:", "");
+      }
+
       // Fetch the specific node
       const response = await apiRequest(
         "GET",
         `/api/chat/node/${nodeId}?lang=${i18n.language}`,
-        { nodeId: nodeId }
+        undefined
       );
       const node: ChatNode = await response.json();
 
@@ -228,8 +237,9 @@ export function useChat(): ChatHook {
     setIsTyping(true);
 
     try {
-      // Get last node from history
+      // Get last node from history and remove it
       const previousNodeId = navigationHistory[navigationHistory.length - 1];
+      setNavigationHistory((prev) => prev.slice(0, -1));
 
       // Fetch the previous node with current language
       const response = await apiRequest(

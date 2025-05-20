@@ -16,12 +16,20 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onClose }) => {
   const { messages, sendMessage, isTyping } = useChat();
   const [inputMessage, setInputMessage] = useState("");
   const [currentLang, setCurrentLang] = useState(i18next.language);
+  const [version, setVersion] = useState("");
   const chatContainerRef = useRef<HTMLDivElement>(null);
 
   const { t } = useTranslation();
 
+  const getVersion = async () => {
+    const res = await fetch("/api/version");
+    const data = await res.json();
+    setVersion(data.version);
+  };
+
   // Forzar una actualización cuando cambie el idioma para que se traduzcan los botones de navegación
   useEffect(() => {
+    getVersion();
     const handleLanguageChange = (lng: string) => {
       setCurrentLang(lng);
     };
@@ -183,6 +191,9 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onClose }) => {
         onSend={handleSendMessage}
         onKeyPress={handleInputKeyPress}
       />
+      <div className="text-right text-xs text-gray-500 py-0.5 h-auto min-h-0 leading-none px-4 pb-1">
+        <span className="px-2 text-xs text-gray-400">{version}</span>
+      </div>
     </div>
   );
 };
