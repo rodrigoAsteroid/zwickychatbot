@@ -12,27 +12,32 @@
             {
               "label": "Conocer productos",
               "value": "conocer_productos",
-              "nextNodeId": "productos"
+              "nextNodeId": "productos",
+              "requiredInput": false
             },
             {
               "label": "Conocer servicios",
               "value": "conocer_servicios",
-              "nextNodeId": "servicios"
+              "nextNodeId": "servicios",
+              "requiredInput": false
             },
             {
               "label": "Solicitar asesoramiento",
               "value": "solicitar_asesoramiento",
-              "nextNodeId": "asesoramiento"
+              "nextNodeId": "asesoramiento",
+              "requiredInput": true
             },
             {
               "label": "Preguntas frecuentes",
               "value": "preguntas_frecuentes",
-              "nextNodeId": "preguntas_frecuentes"
+              "nextNodeId": "preguntas_frecuentes",
+              "requiredInput": false
             },
             {
               "label": "Soporte técnico",
               "value": "soporte_tecnico",
-              "nextNodeId": "soporte"
+              "nextNodeId": "soporte",
+              "requiredInput": true
             }
           ],
           "level": 0
@@ -44,12 +49,14 @@
             {
               "label": "Hablalo",
               "value": "producto_hablalo",
-              "nextNodeId": "producto_hablalo"
+              "nextNodeId": "producto_hablalo",
+              "requiredInput": false
             },
             {
               "label": "Mapa Inclusivo",
               "value": "producto_mapa",
-              "nextNodeId": "producto_mapa"
+              "nextNodeId": "producto_mapa",
+              "requiredInput": false
             }
           ],
           "parentId": "welcome",
@@ -62,32 +69,38 @@
             {
               "label": "Business",
               "value": "servicio_business",
-              "nextNodeId": "servicio_business"
+              "nextNodeId": "servicio_business",
+              "requiredInput": false
             },
             {
               "label": "Education",
               "value": "servicio_education",
-              "nextNodeId": "servicio_education"
+              "nextNodeId": "servicio_education",
+              "requiredInput": false
             },
             {
               "label": "Events",
               "value": "servicio_events",
-              "nextNodeId": "servicio_events"
+              "nextNodeId": "servicio_events",
+              "requiredInput": false
             },
             {
               "label": "Consultorías",
               "value": "servicio_consultorias",
-              "nextNodeId": "servicio_consultorias"
+              "nextNodeId": "servicio_consultorias",
+              "requiredInput": false
             },
             {
               "label": "Capacitaciones",
               "value": "servicio_capacitaciones",
-              "nextNodeId": "servicio_capacitaciones"
+              "nextNodeId": "servicio_capacitaciones",
+              "requiredInput": false
             },
             {
               "label": "Web",
               "value": "servicio_web",
-              "nextNodeId": "servicio_web"
+              "nextNodeId": "servicio_web",
+              "requiredInput": false
             }
           ],
           "parentId": "welcome",
@@ -118,7 +131,8 @@
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "asesoramiento_consulta",
@@ -131,12 +145,14 @@
             {
               "label": "Sobre Hablalo",
               "value": "sobre_hablalo",
-              "nextNodeId": "sobre_hablalo"
+              "nextNodeId": "sobre_hablalo",
+              "requiredInput": false
             },
             {
               "label": "Sobre Asteroid y sus servicios",
               "value": "sobre_asteroid_servicios",
-              "nextNodeId": "sobre_asteroid_servicios"
+              "nextNodeId": "sobre_asteroid_servicios",
+              "requiredInput": false
             }
           ],
           "parentId": "welcome",
@@ -149,27 +165,32 @@
             {
               "label": "¿Cómo puedo descargar la app?",
               "value": "sobre_hablalo_descarga",
-              "nextNodeId": "sobre_hablalo_descarga"
+              "nextNodeId": "sobre_hablalo_descarga",
+              "requiredInput": false
             },
             {
               "label": "¿Cómo funciona?",
               "value": "sobre_hablalo_funcionamiento",
-              "nextNodeId": "sobre_hablalo_funcionamiento"
+              "nextNodeId": "sobre_hablalo_funcionamiento",
+              "requiredInput": false
             },
             {
               "label": "¿Qué son las tarjetas?",
               "value": "sobre_hablalo_cards",
-              "nextNodeId": "sobre_hablalo_cards"
+              "nextNodeId": "sobre_hablalo_cards",
+              "requiredInput": false
             },
             {
               "label": "¿Qué son los atajos?",
               "value": "sobre_hablalo_atajos",
-              "nextNodeId": "sobre_hablalo_atajos"
+              "nextNodeId": "sobre_hablalo_atajos",
+              "requiredInput": false
             },
             {
               "label": "¿Qué es Hablalo Chat?",
               "value": "sobre_hablalo_chat",
-              "nextNodeId": "sobre_hablalo_chat"
+              "nextNodeId": "sobre_hablalo_chat",
+              "requiredInput": false
             }
           ],
           "parentId": "preguntas_frecuentes",
@@ -182,32 +203,38 @@
             {
               "label": "¿Qué es Asteroid Technologies?",
               "value": "sobre_asteroid_servicios_que_es",
-              "nextNodeId": "sobre_asteroid_servicios_que_es"
+              "nextNodeId": "sobre_asteroid_servicios_que_es",
+              "requiredInput": false
             },
             {
               "label": "¿Dónde operan?",
               "value": "sobre_asteroid_servicios_donde_operan",
-              "nextNodeId": "sobre_asteroid_servicios_donde_operan"
+              "nextNodeId": "sobre_asteroid_servicios_donde_operan",
+              "requiredInput": false
             },
             {
               "label": "¿Sus servicios son gratuitos?",
               "value": "sobre_asteroid_servicios_son_gratuitos",
-              "nextNodeId": "sobre_asteroid_servicios_son_gratuitos"
+              "nextNodeId": "sobre_asteroid_servicios_son_gratuitos",
+              "requiredInput": false
             },
             {
               "label": "¿Cómo solicitar una consultoría?",
               "value": "sobre_asteroid_servicios_consultorias",
-              "nextNodeId": "sobre_asteroid_servicios_consultorias"
+              "nextNodeId": "sobre_asteroid_servicios_consultorias",
+              "requiredInput": false
             },
             {
               "label": "¿Cómo ver una demo de Hablalo?",
               "value": "sobre_asteroid_servicios_hablalo_demo",
-              "nextNodeId": "sobre_asteroid_servicios_hablalo_demo"
+              "nextNodeId": "sobre_asteroid_servicios_hablalo_demo",
+              "requiredInput": false
             },
             {
               "label": "¿Trabajan con empresas?",
               "value": "sobre_asteroid_servicios_empresas",
-              "nextNodeId": "sobre_asteroid_servicios_empresas"
+              "nextNodeId": "sobre_asteroid_servicios_empresas",
+              "requiredInput": false
             }
           ],
           "parentId": "preguntas_frecuentes",
@@ -220,12 +247,14 @@
             {
               "label": "Volver a Preguntas sobre Hablalo",
               "value": "_navigate_to_node:sobre_hablalo",
-              "nextNodeId": "sobre_hablalo"
+              "nextNodeId": "sobre_hablalo",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "sobre_hablalo",
@@ -238,12 +267,14 @@
             {
               "label": "Volver a Preguntas sobre Hablalo",
               "value": "_navigate_to_node:sobre_hablalo",
-              "nextNodeId": "sobre_hablalo"
+              "nextNodeId": "sobre_hablalo",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "sobre_hablalo",
@@ -256,12 +287,14 @@
             {
               "label": "Volver a Preguntas sobre Hablalo",
               "value": "_navigate_to_node:sobre_hablalo",
-              "nextNodeId": "sobre_hablalo"
+              "nextNodeId": "sobre_hablalo",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "sobre_hablalo",
@@ -274,12 +307,14 @@
             {
               "label": "Volver a Preguntas sobre Hablalo",
               "value": "_navigate_to_node:sobre_hablalo",
-              "nextNodeId": "sobre_hablalo"
+              "nextNodeId": "sobre_hablalo",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "sobre_hablalo",
@@ -292,12 +327,14 @@
             {
               "label": "Volver a Preguntas sobre Hablalo",
               "value": "_navigate_to_node:sobre_hablalo",
-              "nextNodeId": "sobre_hablalo"
+              "nextNodeId": "sobre_hablalo",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "sobre_hablalo",
@@ -310,12 +347,14 @@
             {
               "label": "Volver a Preguntas sobre Asteroid",
               "value": "_navigate_to_node:sobre_asteroid_servicios",
-              "nextNodeId": "sobre_asteroid_servicios"
+              "nextNodeId": "sobre_asteroid_servicios",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "sobre_asteroid_servicios",
@@ -328,12 +367,14 @@
             {
               "label": "Volver a Preguntas sobre Asteroid",
               "value": "_navigate_to_node:sobre_asteroid_servicios",
-              "nextNodeId": "sobre_asteroid_servicios"
+              "nextNodeId": "sobre_asteroid_servicios",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "sobre_asteroid_servicios",
@@ -346,12 +387,14 @@
             {
               "label": "Volver a Preguntas sobre Asteroid",
               "value": "_navigate_to_node:sobre_asteroid_servicios",
-              "nextNodeId": "sobre_asteroid_servicios"
+              "nextNodeId": "sobre_asteroid_servicios",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "sobre_asteroid_servicios",
@@ -364,12 +407,14 @@
             {
               "label": "Volver a Preguntas sobre Asteroid",
               "value": "_navigate_to_node:sobre_asteroid_servicios",
-              "nextNodeId": "sobre_asteroid_servicios"
+              "nextNodeId": "sobre_asteroid_servicios",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "sobre_asteroid_servicios",
@@ -382,12 +427,14 @@
             {
               "label": "Volver a Preguntas sobre Asteroid",
               "value": "_navigate_to_node:sobre_asteroid_servicios",
-              "nextNodeId": "sobre_asteroid_servicios"
+              "nextNodeId": "sobre_asteroid_servicios",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "sobre_asteroid_servicios",
@@ -400,12 +447,14 @@
             {
               "label": "Volver a Preguntas sobre Asteroid",
               "value": "_navigate_to_node:sobre_asteroid_servicios",
-              "nextNodeId": "sobre_asteroid_servicios"
+              "nextNodeId": "sobre_asteroid_servicios",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "sobre_asteroid_servicios",
@@ -436,7 +485,8 @@
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "soporte_problema",
@@ -449,12 +499,14 @@
             {
               "label": "Volver a Productos",
               "value": "_navigate_to_node:productos",
-              "nextNodeId": "productos"
+              "nextNodeId": "productos",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "productos",
@@ -467,12 +519,14 @@
             {
               "label": "Volver a Productos",
               "value": "_navigate_to_node:productos",
-              "nextNodeId": "productos"
+              "nextNodeId": "productos",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "productos",
@@ -485,12 +539,14 @@
             {
               "label": "Volver a Servicios",
               "value": "_navigate_to_node:servicios",
-              "nextNodeId": "servicios"
+              "nextNodeId": "servicios",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "servicios",
@@ -503,12 +559,14 @@
             {
               "label": "Volver a Servicios",
               "value": "_navigate_to_node:servicios",
-              "nextNodeId": "servicios"
+              "nextNodeId": "servicios",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "servicios",
@@ -521,12 +579,14 @@
             {
               "label": "Volver a Servicios",
               "value": "_navigate_to_node:servicios",
-              "nextNodeId": "servicios"
+              "nextNodeId": "servicios",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "servicios",
@@ -539,12 +599,14 @@
             {
               "label": "Volver a Servicios",
               "value": "_navigate_to_node:servicios",
-              "nextNodeId": "servicios"
+              "nextNodeId": "servicios",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "servicios",
@@ -557,32 +619,38 @@
             {
               "label": "Capacitación básica",
               "value": "capacitacion_basica",
-              "nextNodeId": "capacitacion_basica"
+              "nextNodeId": "capacitacion_basica",
+              "requiredInput": false
             },
             {
               "label": "Capacitación avanzada",
               "value": "capacitacion_avanzada",
-              "nextNodeId": "capacitacion_avanzada"
+              "nextNodeId": "capacitacion_avanzada",
+              "requiredInput": false
             },
             {
               "label": "Capacitación para líderes",
               "value": "capacitacion_lideres",
-              "nextNodeId": "capacitacion_lideres"
+              "nextNodeId": "capacitacion_lideres",
+              "requiredInput": false
             },
             {
               "label": "Modalidades de cursado",
               "value": "modalidades",
-              "nextNodeId": "modalidades"
+              "nextNodeId": "modalidades",
+              "requiredInput": false
             },
             {
               "label": "Volver a Servicios",
               "value": "_navigate_to_node:servicios",
-              "nextNodeId": "servicios"
+              "nextNodeId": "servicios",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "servicios",
@@ -595,17 +663,20 @@
             {
               "label": "Modalidades de cursado",
               "value": "modalidades_cursado",
-              "nextNodeId": "modalidades"
+              "nextNodeId": "modalidades",
+              "requiredInput": false
             },
             {
               "label": "Volver a Capacitaciones",
               "value": "_navigate_to_node:servicio_capacitaciones",
-              "nextNodeId": "servicio_capacitaciones"
+              "nextNodeId": "servicio_capacitaciones",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "servicio_capacitaciones",
@@ -618,17 +689,20 @@
             {
               "label": "Modalidades de cursado",
               "value": "modalidades_cursado",
-              "nextNodeId": "modalidades"
+              "nextNodeId": "modalidades",
+              "requiredInput": false
             },
             {
               "label": "Volver a Capacitaciones",
               "value": "_navigate_to_node:servicio_capacitaciones",
-              "nextNodeId": "servicio_capacitaciones"
+              "nextNodeId": "servicio_capacitaciones",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "servicio_capacitaciones",
@@ -641,17 +715,20 @@
             {
               "label": "Modalidades de cursado",
               "value": "modalidades_cursado",
-              "nextNodeId": "modalidades"
+              "nextNodeId": "modalidades",
+              "requiredInput": false
             },
             {
               "label": "Volver a Capacitaciones",
               "value": "_navigate_to_node:servicio_capacitaciones",
-              "nextNodeId": "servicio_capacitaciones"
+              "nextNodeId": "servicio_capacitaciones",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "servicio_capacitaciones",
@@ -664,12 +741,14 @@
             {
               "label": "Volver a Capacitaciones",
               "value": "_navigate_to_node:servicio_capacitaciones",
-              "nextNodeId": "servicio_capacitaciones"
+              "nextNodeId": "servicio_capacitaciones",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "servicio_capacitaciones",
@@ -682,12 +761,14 @@
             {
               "label": "Volver a Servicios",
               "value": "_navigate_to_node:servicios",
-              "nextNodeId": "servicios"
+              "nextNodeId": "servicios",
+              "requiredInput": false
             },
             {
               "label": "Volver al menú inicial",
               "value": "volver_menu",
-              "nextNodeId": "welcome"
+              "nextNodeId": "welcome",
+              "requiredInput": false
             }
           ],
           "parentId": "servicios",

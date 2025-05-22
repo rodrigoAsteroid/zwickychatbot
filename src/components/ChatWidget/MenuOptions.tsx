@@ -4,7 +4,7 @@ import { Option } from "@/shared/types";
 
 interface MenuOptionsProps {
   options: Option[];
-  onOptionClick: (value: string, label: string) => void;
+  onOptionClick: (value: string, label: string, requiredInput: boolean) => void;
 }
 
 const MenuOptions: React.FC<MenuOptionsProps> = ({ options, onOptionClick }) => {
@@ -22,7 +22,7 @@ const MenuOptions: React.FC<MenuOptionsProps> = ({ options, onOptionClick }) => 
                 ? "bg-transparent border border-[#FF4E00] rounded-full text-xs justify-center" 
                 : "bg-[#191919] rounded-lg border border-[#FF4E00]"
             }`}
-            onClick={() => onOptionClick(option.value, option.label.replace("🔙", "").replace("🏠", "").trim())}
+            onClick={() => onOptionClick(option.value, option.label.replace("🔙", "").replace("🏠", "").trim(), option.requiredInput)}
           >
             {isNavButton && (
               <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">

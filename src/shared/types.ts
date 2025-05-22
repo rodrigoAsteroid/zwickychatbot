@@ -1,7 +1,7 @@
 // Enum for message types
 export enum MessageType {
   USER = "user",
-  BOT = "bot"
+  BOT = "bot",
 }
 
 // Option for menu selection
@@ -9,6 +9,7 @@ export interface Option {
   label: string;
   value: string;
   nextNodeId: string;
+  requiredInput: boolean;
 }
 
 // Message structure

@@ -91,11 +91,17 @@ export function useChat(): ChatHook {
       const userMessage: Message = {
         id: Date.now().toString(),
         type: MessageType.USER,
-        text: displayText || text, // Usar el texto de visualización si está disponible
+        text: displayText || text,
         showFeedback: false,
       };
 
-      setMessages((prev) => [...prev, userMessage]);
+      // Truncar mensajes antiguos hasta el punto de navegación actual
+      const currentNodeIndex = messages.findIndex(msg => msg.id === currentNode);
+      const updatedMessages = currentNodeIndex >= 0 
+        ? messages.slice(0, currentNodeIndex + 1) 
+        : messages;
+
+      setMessages([...updatedMessages, userMessage]);
     }
 
     // Save current node to history before navigating
@@ -174,18 +180,25 @@ export function useChat(): ChatHook {
 
       setCurrentNode(node.id);
 
-      // Add bot message for the node
-      const botMessage: Message = {
-        id: node.id,
-        type: MessageType.BOT,
-        text: node.message,
-        options: node.options,
-        showFeedback: true,
-        parentId: node.parentId,
-      };
-
-      // Add the node's message without clearing history
-      setMessages((prev) => [...prev, botMessage]);
+      // Encontrar el índice del mensaje que contiene este nodo
+      const nodeIndex = messages.findIndex(msg => msg.id === nodeId);
+      
+      // Si el nodo existe en el historial, mantener solo los mensajes hasta ese punto
+      if (nodeIndex >= 0) {
+        setMessages(messages.slice(0, nodeIndex + 1));
+      } else {
+        // Si es un nuevo nodo, agregarlo al historial
+        const botMessage: Message = {
+          id: node.id,
+          type: MessageType.BOT,
+          text: node.message,
+          options: node.options,
+          showFeedback: true,
+          parentId: node.parentId,
+        };
+        
+        setMessages(prev => [...prev, botMessage]);
+      }
 
       setIsTyping(false);
     } catch (error) {

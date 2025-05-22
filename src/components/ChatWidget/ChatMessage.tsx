@@ -9,7 +9,11 @@ import NavigationOptions from "./NavigationOptions";
 
 interface ChatMessageProps {
   message: Message;
-  onMenuOptionClick: (value: string, label: string) => void;
+  onMenuOptionClick: (
+    value: string,
+    label: string,
+    requiredInput: boolean
+  ) => void;
   onNavigateHome: () => void;
   onNavigateBack: () => void;
   isLastUserMessage?: boolean;
@@ -239,7 +243,8 @@ const ChatMessage = ({
                       onHome={() =>
                         onMenuOptionClick(
                           `_navigate_to_node:${message.parentId}`,
-                          t("navigation.back")
+                          t("navigation.back"),
+                          true
                         )
                       }
                       onBack={onNavigateBack}
@@ -247,10 +252,10 @@ const ChatMessage = ({
                         message.parentId === "productos"
                           ? "Productos"
                           : message.parentId === "servicios"
-                          ? "Servicios"
-                          : message.parentId === "preguntas_frecuentes"
-                          ? "Preguntas Frecuentes"
-                          : t(getParentName(message.parentId))
+                            ? "Servicios"
+                            : message.parentId === "preguntas_frecuentes"
+                              ? "Preguntas Frecuentes"
+                              : t(getParentName(message.parentId))
                       }`}
                       showBackButton={false}
                       showHomeButton={true}

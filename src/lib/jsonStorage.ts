@@ -356,29 +356,38 @@ class JsonStorage {
         );
 
         if (selectedOption) {
-          // Get the target node
-          const nextNode = await this.getChatNode(
-            selectedOption.nextNodeId,
-            language
-          );
+          try {
+            // Get the target node
+            const nextNode = await this.getChatNode(
+              selectedOption.nextNodeId,
+              language
+            );
 
-          // Make sure the target node has a parentId to allow proper navigation
-          if (!nextNode.parentId) {
-            nextNode.parentId = currentNodeId;
+            // Make sure the target node has a parentId to allow proper navigation
+            if (!nextNode.parentId) {
+              nextNode.parentId = currentNodeId;
+            }
+
+            // Refresh options al navegar a un nuevo nodo
+            const data = readData();
+            const freshNode = data.chatTree.structure.nodes[selectedOption.nextNodeId];
+            if (freshNode && freshNode.options) {
+              nextNode.options = freshNode.options;
+            }
+
+            return nextNode;
+          } catch (error) {
+            console.error(error)
+            // Si falla obtener el nodo destino, volver al nodo welcome
+            console.log(`Error navigating to node ${selectedOption.nextNodeId}, returning to welcome`);
+            return await this.getChatNode("welcome", language);
           }
-
-          return nextNode;
         }
       }
 
-      // If no matching option or no options, return a fallback node
-      // El mensaje de fallback se traduce en el frontend
-      return {
-        id: "fallback",
-        message: "chat.fallback", // Usamos una clave de traducción
-        options: currentNode.options,
-        parentId: currentNodeId,
-      };
+      // Si no hay opciones que coincidan, volver al nodo welcome
+      console.log("No matching option found, returning to welcome node");
+      return await this.getChatNode("welcome", language);
     } catch (error) {
       console.error("Error getting next node:", error);
       throw error;

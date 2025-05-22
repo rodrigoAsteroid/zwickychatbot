@@ -6,9 +6,10 @@ interface ChatInputProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onSend: () => void;
   onKeyPress: (e: React.KeyboardEvent<HTMLInputElement>) => void;
+  disableInput?: boolean;
 }
 
-const ChatInput: React.FC<ChatInputProps> = ({ value, onChange, onSend, onKeyPress }) => {
+const ChatInput: React.FC<ChatInputProps> = ({ value, onChange, onSend, onKeyPress, disableInput }) => {
   const { t } = useTranslation();
   
   return (
@@ -22,6 +23,7 @@ const ChatInput: React.FC<ChatInputProps> = ({ value, onChange, onSend, onKeyPre
             value={value}
             onChange={onChange}
             onKeyPress={onKeyPress}
+            disabled={disableInput}
           />
         </div>
         <button 

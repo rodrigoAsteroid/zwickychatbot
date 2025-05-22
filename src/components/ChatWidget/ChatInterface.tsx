@@ -16,6 +16,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onClose }) => {
   const { messages, sendMessage, isTyping } = useChat();
   const [inputMessage, setInputMessage] = useState("");
   const [currentLang, setCurrentLang] = useState(i18next.language);
+  const [disableInput, setDisableInput] = useState(true);
   const [version, setVersion] = useState("");
   const chatContainerRef = useRef<HTMLDivElement>(null);
 
@@ -60,14 +61,29 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onClose }) => {
     }
   };
 
+  const onSend = async () => {
+    await fetch("/api/email/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name: "Test", email: "", message: "Hola mundo" }),
+    });
+  };
+
   const handleInputKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       handleSendMessage();
     }
   };
 
-  const handleMenuOptionClick = (value: string, label: string) => {
+  const handleMenuOptionClick = (
+    value: string,
+    label: string,
+    requiredInput: boolean
+  ) => {
     // Enviamos el valor para la lógica interna, pero mostramos la etiqueta al usuario
+    setDisableInput(!requiredInput);
     sendMessage(value, label);
   };
 
@@ -91,7 +107,11 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onClose }) => {
             key={`${index}-${currentLang}`} // Forzar re-render al cambiar el idioma
             message={message}
             onMenuOptionClick={handleMenuOptionClick}
-            onNavigateHome={() => sendMessage("_home")}
+            onNavigateHome={() => {
+              sendMessage("_home");
+              setDisableInput(true);
+              setInputMessage("");
+            }}
             onNavigateBack={() => sendMessage("_back")}
           />
         ))}
@@ -190,9 +210,11 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ onClose }) => {
         onChange={(e) => setInputMessage(e.target.value)}
         onSend={handleSendMessage}
         onKeyPress={handleInputKeyPress}
+        disableInput={disableInput}
       />
+
       <div className="text-right text-xs text-gray-500 py-0.5 h-auto min-h-0 leading-none px-4 pb-1">
-        <span className="px-2 text-xs text-gray-400">{version}</span>
+        <span className="px-2 text-[10px] text-gray-400">{version}</span>
       </div>
     </div>
   );
